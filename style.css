@@ -1,4 +1,4 @@
-/* ---------------------- CONFIGURAÇÃO GLOBAL ---------------------- */
+/*  CONFIGURAÇÃO GLOBAL */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     scroll-behavior: smooth;
 }
 
-/* ---------------------- CABEÇALHO / MENU ---------------------- */
+/* CABEÇALHO / MENU */
 header {
     background: #004aad;
     padding: 15px 0;
@@ -65,7 +65,7 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* ---------------------- BANNER (Trocaremos depois pela imagem real da escola) ---------------------- */
+/*             BANNER        */
 .banner {
     background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
     url(banner.jpeg) center/cover no-repeat;
@@ -77,7 +77,7 @@ nav a:hover {
     text-align: center;
     padding: 0 15px;
     .banner-texto {
-    transform: translateY(-90px); /* move o texto para cima */
+    transform: translateY(-90px);
 }
 
 }
@@ -91,10 +91,10 @@ nav a:hover {
 .banner p {
     font-size: 18px;
     font-weight: 500;
-    color: #060D98; /* mesma cor, mantém harmonia */
+    color: #060D98; /* mesma cor */
 }
 
-/* ---------------------- SEÇÕES ---------------------- */
+/*        SEÇÕES  */
 .container {
     max-width: 1100px;
     margin: auto;
@@ -107,7 +107,7 @@ nav a:hover {
     color: #004aad;
 }
 
-/* ---------------------- SEÇÃO NOTÍCIAS ---------------------- */
+/*      SEÇÃO NOTÍCIAS */
 .news-list {
     display: flex;
     flex-direction: column;
@@ -175,7 +175,7 @@ footer {
     padding: 15px;
     margin-top: 60px;
 }
-/* ---------------------- RESPONSIVIDADE ---------------------- */
+/*    RESPONSIVIDADE */
 
 @media (max-width: 900px) {
     nav ul {
@@ -240,7 +240,7 @@ footer {
         font-size: 16px;
     }
 }
-/* Menu hamburguer no celular */
+/* Menu no celular */
 @media (max-width: 768px) {
 
     .menu-btn {
@@ -262,4 +262,39 @@ footer {
     nav ul.active {
         display: flex;
     }
+/* ===== Seção Sobre a Escola – Versão Organizada ===== */
+}
+.sobre-escola {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.sobre-bloco {
+    margin-bottom: 45px;
+}
+
+.sobre-bloco h3 {
+    font-size: 22px;
+    color: #003a86;
+    margin-bottom: 12px;
+    border-left: 4px solid #004aad;
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.sobre-bloco p {
+    font-size: 17px;
+    line-height: 1.75;
+    margin-bottom: 12px;
+}
+
+/* Imagem da fachada */
+.img-sobre {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    border-radius: 10px;
+    margin: 0 auto 35px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
