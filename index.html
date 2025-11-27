@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMEF Germano Dockhorn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav>
+    <h1>EMEF Germano Dockhorn</h1>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <ul class="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#sobre">Sobre a Escola</a></li>
+        <li><a href="#noticias">Notícias e Eventos</a></li>
+        <li><a href="#contato">Contato</a></li>
+    </ul>
+</nav>
+<script>
+function toggleMenu() {
+    document.querySelector(".menu").classList.toggle("active");
+}
+</script>
+</header>
+
+<section id="inicio" class="banner">
+    <div class="banner-texto">
+        <h2>BEM-VINDO(A)</h2>
+    </div>
+</section>
+
+<section id="sobre" class="container">
+    <h2>Sobre a Escola</h2>
+    <p>A EMEF Germano Dockhorn, fundada em 1976, atua com compromisso no desenvolvimento educacional da comunidade de Três de Maio. Em 2026, a escola completará 50 anos de história, dedicando-se à formação de estudantes e ao fortalecimento dos laços comunitários.</p>
+</section>
+
+<section id="noticias" class="container">
+    <h2>Notícias e Eventos</h2>
+
+    <div class="news-list">
+
+        <div class="news-item">
+            <div class="news-date">
+                <span class="day">20</span>
+                <span class="month">MAR</span>
+            </div>
+            <div class="news-content">
+                <h3>Atividades de Integração com a Comunidade</h3>
+                <p>Realizamos uma tarde de integração entre alunos, famílias e colaboradores da escola.</p>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <div class="news-date">
+                <span class="day">12</span>
+                <span class="month">ABR</span>
+            </div>
+            <div class="news-content">
+                <h3>Semana Pedagógica 2024</h3>
+                <p>Professores participaram de formações voltadas a práticas pedagógicas inovadoras.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="contato" class="container">
+    <h2>Contato</h2>
+    <p><strong>Endereço:</strong> Rua Horizontina, 1532 - Glória, Três de Maio - RS, 98910-000</p>
+    <p><strong>Telefone:</strong> (55) 3535-1949</p>
+</section>
+
+<footer>
+    <p>© 2025 EMEF Germano Dockhorn - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
